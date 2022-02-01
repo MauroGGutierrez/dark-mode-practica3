@@ -7,17 +7,15 @@ function DarkMode() {
 
   return (
     <div className={dark ? 'wrapper-dark' : 'wrapper-light'}>
-      <div className='container'> 
-        <div className='header'>
-          <div className='logo'>
-              <h1>Hello, soy Mauro </h1>
-              <p>Bienvenidos a mi blog !</p>
-          </div>
-          <div>
-            <button type='button' className='btn' onClick={() => setDark(!dark)}>{dark ? 'Light Mode' : 'Dark Mode'}</button>
-          </div>
-        </div>                               
-      </div>
+      <div className='header container'>
+        <div className='logo'>
+            <h1>Hello, soy Mauro </h1>
+            <p>Bienvenidos a mi blog !</p>
+        </div>
+        <div>
+          <button type='button' className='btn' onClick={() => setDark(!dark)}>{dark ? 'Light Mode' : 'Dark Mode'}</button>
+        </div>
+      </div>                               
       <div className='hero'>
         <h3>Lo mejor de la tecnologia</h3>
         <h4 className={dark ? 'dark' : 'light'}><b>Lo encontras acá</b></h4>
